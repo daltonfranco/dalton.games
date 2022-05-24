@@ -19,7 +19,7 @@ public class Genero {
     private int id;
     private String nome;
 
-    @OneToMany(mappedBy = "genero") // Um para muitos / nome do relacionamento
+    @OneToMany(mappedBy = "generos") // Um para muitos / nome do relacionamento
     private Set<Jogo> jogos = new HastSet<> (); // Colocando coisas na classe Jogo, transformando em objeto
 
     public Set<Jogo> getJogos() {
